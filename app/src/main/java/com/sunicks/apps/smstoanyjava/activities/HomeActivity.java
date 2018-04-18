@@ -14,9 +14,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.sunicks.apps.smstoanyjava.R;
+import com.sunicks.apps.smstoanyjava.models.AppFeatures;
+import com.sunicks.apps.smstoanyjava.presenters.HomeActivityPresenter;
+import com.sunicks.apps.smstoanyjava.views.HomeActivityView;
+
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, HomeActivityView {
+
+    HomeActivityPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +49,8 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        presenter = new HomeActivityPresenter(this, null);
     }
 
     @Override
@@ -99,5 +108,15 @@ public class HomeActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void displayAppFeatures(List<AppFeatures> appFeaturesList) {
+
+    }
+
+    @Override
+    public void displayNoAppFeatures() {
+
     }
 }
