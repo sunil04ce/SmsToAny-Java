@@ -1,0 +1,5 @@
+<resources>
+    <string name="path_of_regular_font">fonts/Roboto-Regular.ttf</string>
+    <string name="path_of_bold_font">fonts/Roboto-Bold.ttf</string>
+    <string name="path_of_light_font">fonts/Roboto-Light.ttf</string>
+</resources>

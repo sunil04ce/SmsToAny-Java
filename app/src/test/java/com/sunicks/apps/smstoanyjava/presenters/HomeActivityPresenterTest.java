@@ -13,10 +13,10 @@ import java.util.List;
 
 public class HomeActivityPresenterTest {
 
-    /*@Test
+    @Test
     public void shouldPass(){
         Assert.assertEquals(1,1);
-    }*/
+    }
 
     @Test
     public void shouldPassHomeActivityToHomeActivityView(){
