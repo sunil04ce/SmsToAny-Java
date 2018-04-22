@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!-- <integer name="space_8">8</integer>
+    <integer name="space_10">10</integer>
+    <integer name="space_12">12</integer>
+    <integer name="space_14">14</integer>
+    <integer name="space_16">16</integer>
+    <integer name="space_18">18</integer>
+    <integer name="space_20">20</integer>-->
+    
+    <integer name="textsize_12">12</integer>
+    <integer name="textsize_14">14</integer>
+    <integer name="textsize_16">16</integer>
+    <integer name="textsize_18">18</integer>
+    <integer name="textsize_20">20</integer>
+    <integer name="textsize_22">22</integer>
+    <integer name="textsize_24">24</integer>
+    <integer name="textsize_26">26</integer>
+    <integer name="textsize_28">28</integer>
+    <integer name="textsize_30">30</integer>
+    <integer name="textsize_32">32</integer>
+</resources>

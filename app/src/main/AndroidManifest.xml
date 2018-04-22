@@ -21,6 +21,7 @@
         </activity>
         <activity
             android:name=".activities.CreateNewSMSActivity"
+            android:label="@string/lbl_create_new_sms"
             android:windowSoftInputMode="stateHidden|adjustPan" />
     </application>
 
