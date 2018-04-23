@@ -5,14 +5,14 @@
     android:id="@+id/llMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/space_8dp">
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/margin_bottom_scrollview"
-        android:padding="@dimen/space_8dp">
+        android:layout_marginBottom="@dimen/margin_bottom_scrollview">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -32,29 +32,50 @@
                     android:hint="@string/lbl_to" />
             </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_10dp"
-                app:hintTextAppearance="@style/TextInputLayoutStyle"
-                app:layout_constraintTop_toBottomOf="@+id/tilTo">
-
-                <com.sunicks.apps.applibrary.customviews.editviews.EditTextRegular
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="start|top"
-                    android:hint="@string/lbl_message"
-                    android:textAlignment="viewStart" />
-            </android.support.design.widget.TextInputLayout>
 
         </android.support.constraint.ConstraintLayout>
 
     </ScrollView>
 
-    <com.sunicks.apps.applibrary.customviews.buttons.ButtonRegular
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/TextInputLayoutStyle">
+
+            <com.sunicks.apps.applibrary.customviews.editviews.EditTextRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:hint="@string/lbl_message"
+                android:maxLines="5"
+                android:minLines="5"
+                android:textAlignment="viewStart" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/ic_send"
+            android:tint="@color/colorPrimary" />
+
+    </LinearLayout>
+    <!--<com.sunicks.apps.applibrary.customviews.buttons.ButtonRegular
         android:id="@+id/btnSend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/lbl_send" />
+        android:text="@string/lbl_send" />-->
 </RelativeLayout>

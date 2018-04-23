@@ -29,4 +29,5 @@ dependencies {
 
     // Add modules here
     implementation project(":applibrary")
+    implementation 'com.android.support:cardview-v7:27.1.1'
 }
